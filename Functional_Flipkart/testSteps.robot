@@ -69,6 +69,7 @@ Verify WebPage title
     Log to Console  ${title_name}
 
 Verify Product Page Title
+    #Getting handle for tabs
     Select Window  ${Product_Page_Title}
     Verify WebPage title  ${Product_Page_Title}
     Log to Console  Step6
@@ -79,6 +80,7 @@ Click On Add To Cart Button
     Log to Console  Step7
 
 Navigate To Home Page and Click Cart Button
+    #Click on Flipkart Icon to move to home page
     Click Element  xpath=//img[@class='_2xm1JU']
     sleep  5s
     #Click on Cart
